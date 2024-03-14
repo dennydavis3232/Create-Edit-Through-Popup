@@ -1,0 +1,220 @@
+﻿body {
+    margin-bottom: 20px;
+    background-image: none;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Updated font family */
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #333;
+    background-color: #fff;
+}
+
+.edit-details-button {
+    padding: 5px 10px;
+    background-color: #3c8dbc;
+    color: #fff;
+    border: 1px solid #6c757d;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    .edit-details-button:hover {
+        background-color: #3c8dbc;
+    }
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+.popup-container {
+    padding: 20px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    background-color: #3c8dbc;
+    color: #fff;
+    border: 1px solid #6c757d;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        background-color: #3c8dbc;
+    }
+
+    .btn-primary:active,
+    .btn-primary:focus {
+        background-color: #3c8dbc;
+        border-color: #333;
+    }
+
+.center-container .btn-primary {
+    font-size: 19px;
+    padding: 12px 14px;
+    min-width: 135px;
+    font-weight: bold;
+}
+
+.btn-secondary.cancel-btn {
+    background-color: #6c757d;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.center-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#popup1 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    z-index: 999;
+    width: 600px;
+    height: auto;
+}
+
+.popup-container {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: inline-block;
+        width: 120px;
+        margin-right: 10px;
+    }
+
+    .form-group input[type="text"] {
+        width: calc(100% - 130px);
+    }
+
+.btn-container {
+    text-align: center;
+}
+
+    .btn-container button {
+        margin: 0 5px;
+    }
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+    .form-group label {
+        flex: 0 0 120px;
+        margin-right: 10px;
+    }
+
+    .form-group input[type="text"] {
+        flex: 1;
+    }
+
+.success-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    border: 2px solid #ccc;
+}
+
+.success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-icon {
+    font-size: 48px;
+    color: #2e6da4;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+#GridView1 th {
+    color: #2e6da4;
+    background-color: #f2f2f2;
+    border: 1px solid #367fa9;
+    padding: 8px;
+}
+
+#GridView1 td {
+    border: 1px solid #367fa9;
+    white-space: pre-line;
+    padding: 10px;
+}
