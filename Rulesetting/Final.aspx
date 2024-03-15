@@ -15,6 +15,13 @@
         <nav class="navbar navbar-dark bg-dark">
             <!-- Navbar content goes here -->
             <span class="navbar-brand mb-0 h1">EMAIL-AUTOMATION</span>
+            <div class="form-inline">
+                <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control mr-sm-2" placeholder="Search by Rule Name"></asp:TextBox>
+                <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-outline-light my-2 my-sm-0" OnClick="btnSearch_Click"></asp:Button>
+                <div style="margin-left: 10px;"></div>
+                <!-- Small gap -->
+                <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="btn btn-outline-light my-2 my-sm-0" OnClick="btnCancel_Click" Visible="false"></asp:Button>
+            </div>
         </nav>
 
         <table class="w-100">
