@@ -240,7 +240,7 @@
                         <div class="col-lg-2">
                             <div class="form-group">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="Textbox2" ErrorMessage="*<br/>" ValidationGroup="ValidationGroup1" ForeColor="#3c8dbc"></asp:RequiredFieldValidator>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Textbox2" ErrorMessage="*Invalid Email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="ValidationGroup1" ForeColor="#3c8dbc"></asp:RegularExpressionValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Textbox2" ErrorMessage="*Invalid Email" ValidationExpression="^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,},?)+$"  ValidationGroup="ValidationGroup1" ForeColor="#3c8dbc"></asp:RegularExpressionValidator>
                             </div>
                         </div>
                     </div>
