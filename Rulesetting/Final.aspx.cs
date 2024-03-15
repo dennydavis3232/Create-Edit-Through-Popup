@@ -119,6 +119,37 @@ namespace Rulesetting
                 Logging("Error on pageindexchanging : " + cx.Message, "E_");
             }
         }
+         protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string searchText = txtSearch.Text.Trim();
+                string s2 = "select * from File_details where rulename='" + searchText + "'";
+                DataTable d4 = obj.ExecuteGetDataTable(s2);
+                GridView1.DataSource = d4;
+                GridView1.DataBind();
+                btnCancel.Visible = true;
+            }
+            catch
+            {
+                Logging("Error on search button : " , "E_");
+
+            }
+        }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Bindgridview();
+                btnCancel.Visible = false;
+                btnSearch.Visible = true;
+            }
+            catch
+            {
+                Logging("Error on cancelbutton : ", "E_");
+            }
+        }
+
         public void Logging(string str, string sType)
         {
             while (true)
